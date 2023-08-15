@@ -84,7 +84,6 @@ export function Page(props: {
                     canShare={props.headerProps?.canShare}
                     title={props.headerProps?.title}
                     onShare={props.headerProps?.onShare} />
-                {props.showSubHeader && <SubHeader />}
                 {props.children}
                 <AudioControls />
                 <MessageInput key={localStorage.getItem('openai-api-key')} />
